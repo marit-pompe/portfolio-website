@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar-logo"><h2>Marit Pompe</h2></a>
+        <button class="hamburger" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="navbar-links">
+            <a href="index.html" data-translate="about">About</a>
+            <a href="index.html" data-translate="skills">Skills</a>
+            <a href="index.html" data-translate="projects">Projects</a>
+            <a href="contact.html">Contact</a>
+            <select id="languageSwitcher">
+                <option value="en">English</option>
+                <option value="nl">Nederlands</option>
+            </select>
+        </ul>
+    </nav>
+    <main>
+        <section class="contact">
+            <h1 class="contact-header" data-translate="contact_header">Ready to create something amazing? Let's connect and collaborate!</h1>
+            <div class="contact-form">
+                <form action="">
+                    <label for="name" data-translate="label_name">Your Name:</label>
+                    <input type="text" id="label_name" name="name" required><br><br>
+
+                    <label for="email" data-translate="label_email">Your Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                
+                    <label for="subject" data-translate="label_subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required><br><br>
+
+                    <label for="message" data-translate="label_message">Message:</label>
+                    <textarea id="message" name="message" rows="10" required></textarea>
+                
+                    <button type="submit" class="btn" data-translate="label_submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <p data-translate="copyright">&copy; <span id="copyright-year"></span> Marit Pompe. All Rights Reserved.</p>
+        </section>
+        <section>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar-logo"><h2>Marit Pompe</h2></a>
+        <button class="hamburger" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="navbar-links">
+            <a href="index.html" data-translate="about">About</a>
+            <a href="#skills" data-translate="skills">Skills</a>
+            <a href="#projects" data-translate="projects">Projects</a>
+            <a href="contact.html">Contact</a>
+            <select id="languageSwitcher">
+                <option value="en">English</option>
+                <option value="nl">Nederlands</option>
+            </select>
+        </ul>
+    </nav>
+    <header>
+        <section class="about">
+            <div class="about-text">
+                <h1 data-translate="about_title">About</h1>
+                <p data-translate="intro_text">Hello! I'm Marit Pompe, a dedicated student currently pursuing the Full-stack Engineer Career Path at Codecademy. With a strong passion for coding, I am committed to building user-centric projects that solve real-world problems. My experience in hospitality has equipped me with invaluable skills in communication, teamwork, and problem-solving, which I now wish to apply in the tech world to create seamless and engaging digital experiences.</p>
+                <p data-translate="hobbies_text">Beyond coding, I'm an avid learner, exploring languages to connect with people across cultures. Traveling inspires my creativity, while photography allows me to capture and share meaningful moments. Together, these experiences shape my unique perspective as a developer.</p>
+                <p data-translate="closing_text">Feel free to explore my projects and reach out — I'm always excited to collaborate!</p>
+            </div>
+            <div class="about-image">
+                <img src="../Portfolio Website/Images/Profile Picture.jpg" alt="Marit Pompe" width="300px">
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="skills" id="skills">
+            <h2 data-translate="skills">Skills</h2>
+            <div class="skills-icons">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-solid fa-database"></i>
+                <i class="fa-brands fa-git"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <h2 data-translate="projects">Projects</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="../Portfolio Website/Images/Project 1.jpg" alt="Project 1" width="300px">
+                    <div class="overlay">
+                        <div class="text">
+                            <h3>Project 1</h3>
+                            <p data-translate="coming_soon">Coming soon!</p>
+                            <button class="btn" data-translate="view_more">View more</button>
+                        </div>   
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../Portfolio Website/Images/Project 2.jpg" alt="Project 2" width="300px">
+                    <div class="overlay">
+                        <div class="text">
+                            <h3>Project 2</h3>
+                            <p data-translate="coming_soon">Coming soon!</p>
+                            <button class="btn" data-translate="view_more">View more</button>
+                        </div>   
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../Portfolio Website/Images/Project 3.jpg" alt="Project 3" width="300px">
+                    <div class="overlay">
+                        <div class="text">
+                            <h3>Project 3</h3>
+                            <p data-translate="coming_soon">Coming soon!</p>
+                            <button class="btn" data-translate="view_more">View more</button>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <p data-translate="copyright">&copy; <span id="copyright-year"></span> Marit Pompe. All Rights Reserved.</p>
+        </section>
+        <section>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
